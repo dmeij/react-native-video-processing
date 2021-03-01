@@ -2,6 +2,5 @@
 #define RNVideoProcessing_Bridging_Header_h
 
 #import "React/RCTBridgeModule.h"
-#import "GPUImage.h"
 
 #endif /* RNVideoProcessing_Bridging_Header_h */

@@ -1,4 +1,3 @@
-
 ## react-native-video-processing
 
  [![Build Status](https://travis-ci.org/shahen94/react-native-video-processing.svg?branch=master)](https://travis-ci.org/shahen94/react-native-video-processing) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=plastic)](https://github.com/semantic-release/semantic-release) [![npm version](https://badge.fury.io/js/react-native-video-processing.svg)](https://badge.fury.io/js/react-native-video-processing) ![npm package](https://img.shields.io/npm/dm/react-native-video-processing.svg)
@@ -14,18 +13,6 @@ yarn add react-native-video-processing
 `$ npm test` or `$ yarn test`
 
 ### Installation
-**Note: For RN 0.60+**
-```sh
-	cd ios && pod install
-```
-
-**iOS Prerequisite:** Please make sure `CocoaPods` is installed on your system
-```
-- Add the line below to your `Podfile` -> `ios/Podfile` and run pod install:
-
-pod 'GPUImage', git: 'https://github.com/BunHouth/GPUImage.git'
-```
-
 **Note: For RN 0.4x use 1.0 version, for RN 0.3x use 0.16**
 
 #### [Android]
@@ -67,7 +54,7 @@ project(':react-native-video-processing').projectDir = new File(rootProject.proj
 5. Under your project's `Build Phases`, make sure the `.swift` files you added appear under `Compile Sources`.
 
 6. Under your project's `General` tab, add the following frameworks to  `Linked Frameworks and Libraries` :
-
+  
   - CoreMedia
   - CoreVideo
   - OpenGLES
@@ -78,7 +65,7 @@ project(':react-native-video-processing').projectDir = new File(rootProject.proj
 
 7. Add `GPUImage.frameworkiOS` to `Embedded Binaries`.
 
-8. Navigate to your project's bridging header file  *<ProjectName-Bridging-Header.h>* and add `#import RNVideoProcessing.h`.
+8. Navigate to your project's bridging header file  *<ProjectName-Bridging-Header.h>* and add `#import "RNVideoProcessing.h"`.
 
 9.  Clean and run your project.
 
@@ -197,7 +184,7 @@ export class App extends Component {
     ProcessingManager.compress(source, options) // like VideoPlayer compress options
               .then((data) => console.log(data));
 
-    ProcessingManager.reverse(source) // reverses the source video
+    ProcessingManager.reverse(source) // reverses the source video 
               .then((data) => console.log(data)); // returns the new file source
 
     ProcessingManager.boomerang(source) // creates a "boomerang" of the surce video (plays forward then plays backwards)
@@ -215,7 +202,7 @@ export class App extends Component {
 
 ##
 If this project was helpful to you, please <html>
- <a href="https://www.buymeacoffee.com/FnENSxi" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/yellow_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+ <a href="https://www.buymeacoffee.com/FnENSxi" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/yellow_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto;" ></a>
  </html>
 
 ## Contributing
